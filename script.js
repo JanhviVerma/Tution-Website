@@ -275,6 +275,17 @@ document.addEventListener('DOMContentLoaded', () => {
         calendar.render();
     });
 
+    // Initialize testimonials carousel
+    $(document).ready(function(){
+        $('.testimonials-carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+    });
+
     // Profile form submission
     document.getElementById('profile-form').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -284,4 +295,10 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(`Profile updated successfully, ${name}!`);
     });
 
+    // Newsletter form submission
+    document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('newsletter-email').value;
+        alert(`Thank you for subscribing with ${email}!`);
+    });
 });

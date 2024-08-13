@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheetal Teaches</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
 </head>
 <body>
     <header>
@@ -474,6 +478,42 @@
                 </ul>
             </div>
         </section>
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <div class="testimonials-carousel">
+                    <div class="testimonial">
+                        <p>"Sheetal Teaches has transformed my learning experience. The interactive sessions and resources are top-notch!"</p>
+                        <p><strong>Emily Johnson</strong></p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The courses offered here are well-structured and informative. I highly recommend Sheetal Teaches to anyone looking to improve their skills."</p>
+                        <p><strong>Michael Brown</strong></p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Excellent teaching methods and great support from the instructors. My grades have significantly improved!"</p>
+                        <p><strong>Sarah Lee</strong></p>
+                    </div>
+                </div>
+        </section>
+
+        <section id="search" class="section">
+            <div class="container">
+                <h2>Search Courses</h2>
+                <input type="text" id="course-search" placeholder="Search for courses...">
+            </div>
+        </section>
+
+        <section id="newsletter" class="section">
+            <div class="container">
+                <h2>Newsletter Subscription</h2>
+                <form id="newsletter-form">
+                    <label for="newsletter-email">Email</label>
+                    <input type="email" id="newsletter-email" name="newsletter-email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -490,5 +530,6 @@
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/locales-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
 </html>
