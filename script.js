@@ -301,4 +301,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const email = document.getElementById('newsletter-email').value;
         alert(`Thank you for subscribing with ${email}!`);
     });
+
+    // Contact form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('contact-name').value;
+        const email = document.getElementById('contact-email').value;
+        const message = document.getElementById('contact-message').value;
+        alert(`Message sent successfully, ${name}!`);
+    });
 });
