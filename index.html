@@ -24,6 +24,7 @@
                     <li><a href="#calendar">Calendar</a></li>
                     <li><a href="#resources">Resources</a></li>
                     <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#profile">Profile</a></li>
                 </ul>
             </nav>
         </div>
@@ -438,6 +439,41 @@
                 </form>
             </div>
         </section>
+        <section id="profile" class="section">
+            <div class="container">
+                <h2>User Profile</h2>
+                <form id="profile-form">
+                    <label for="profile-name">Name</label>
+                    <input type="text" id="profile-name" name="profile-name" required>
+                    
+                    <label for="profile-email">Email</label>
+                    <input type="email" id="profile-email" name="profile-email" required>
+                    
+                    <label for="profile-password">Password</label>
+                    <input type="password" id="profile-password" name="profile-password">
+                    
+                    <button type="submit">Update Profile</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="calendar" class="section">
+            <div class="container">
+                <h2>Calendar</h2>
+                <div id="calendar"></div>
+            </div>
+        </section>
+
+        <section id="resources" class="section">
+            <div class="container">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="resources/math-guide.pdf" download>Mathematics Guide (PDF)</a></li>
+                    <li><a href="resources/programming-basics.pdf" download>Programming Basics (PDF)</a></li>
+                    <li><a href="resources/science-experiments.pdf" download>Science Experiments (PDF)</a></li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -452,5 +488,7 @@
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/locales-all.min.js"></script>
 </body>
 </html>

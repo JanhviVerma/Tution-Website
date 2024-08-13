@@ -253,4 +253,35 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(`Thank you for your comment, ${name}!`);
     });
 
+    // Initialize calendar
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            locale: 'en',
+            events: [
+                {
+                    title: 'Math Exam',
+                    start: '2024-08-15',
+                    description: 'Mathematics final exam.',
+                },
+                {
+                    title: 'Science Project Deadline',
+                    start: '2024-08-20',
+                    description: 'Deadline for the science project submission.',
+                }
+            ]
+        });
+        calendar.render();
+    });
+
+    // Profile form submission
+    document.getElementById('profile-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('profile-name').value;
+        const email = document.getElementById('profile-email').value;
+        const password = document.getElementById('profile-password').value;
+        alert(`Profile updated successfully, ${name}!`);
+    });
+
 });

@@ -894,3 +894,82 @@ footer .social-media img {
         margin: 5px 0;
     }
 }
+
+#profile {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+#profile-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#profile-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#profile-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#profile-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#profile-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Calendar section */
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Resources section */
+#resources {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+#resources ul {
+    list-style: none;
+    padding: 0;
+}
+
+#resources ul li {
+    margin: 10px 0;
+}
+
+#resources ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#resources ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    #nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-links li {
+        margin: 5px 0;
+    }
+}
