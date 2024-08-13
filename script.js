@@ -222,4 +222,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Newsletter form submission
+    document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('newsletter-email').value;
+        alert(`Thank you for subscribing to our newsletter, ${email}!`);
+    });
+
+    // Login form submission
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        alert(`Welcome back, ${username}!`);
+    });
+
 });
