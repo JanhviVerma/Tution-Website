@@ -21,6 +21,7 @@
                     <li><a href="#newsletter">Newsletter</a></li>
                     <li><a href="#login">Login</a></li>
                     <li><a href="#blog">Blog</a></li>
+                    <li><a href="#calendar">Calendar</a></li>
                 </ul>
             </nav>
         </div>
@@ -189,6 +190,98 @@
                     <p>Regular practice is key to mastering any subject. Discover strategies for incorporating practice into your daily routine and track your progress.</p>
                     <a href="#">Read more</a>
                 </div>
+            </div>
+        </section>
+        <section id="calendar" class="section">
+            <div class="container">
+                <h2>Class Schedule</h2>
+                <div id="calendar-container">
+                    <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=YOUR_TIMEZONE" style="border: 0;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="courses" class="section">
+            <div class="container">
+                <h2>Our Courses</h2>
+                <p>We offer a variety of courses across different subjects to help students succeed academically. Each course is designed to provide in-depth knowledge and practical skills.</p>
+                <div class="course-filter">
+                    <label for="course-category">Filter by Category:</label>
+                    <select id="course-category">
+                        <option value="all">All</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="english">English</option>
+                        <option value="cs">Computer Science</option>
+                    </select>
+                </div>
+                <div class="course-list" id="course-list">
+                    <div class="course-item">
+                        <h3>Advanced Mathematics</h3>
+                        <p>This course covers advanced mathematical concepts including calculus, algebra, and geometry. Ideal for high school students preparing for college-level mathematics.</p>
+                        <p><strong>Duration:</strong> 12 weeks</p>
+                        <p><strong>Instructor:</strong> Raj Patel</p>
+                    </div>
+                    <div class="course-item">
+                        <h3>Introduction to Physics</h3>
+                        <p>A foundational course in physics covering basic principles and laws of motion. Suitable for beginners and those looking to refresh their understanding of fundamental concepts.</p>
+                        <p><strong>Duration:</strong> 8 weeks</p>
+                        <p><strong>Instructor:</strong> Sheetal Sharma</p>
+                    </div>
+                    <div class="course-item">
+                        <h3>English Literature</h3>
+                        <p>Explore classic and modern literature, focusing on analysis and interpretation. This course enhances reading comprehension and critical thinking skills.</p>
+                        <p><strong>Duration:</strong> 10 weeks</p>
+                        <p><strong>Instructor:</strong> Raj Patel</p>
+                    </div>
+                    <div class="course-item">
+                        <h3>Introduction to Computer Science</h3>
+                        <p>Learn the basics of computer science, including programming fundamentals, data structures, and algorithms. Ideal for those new to the field.</p>
+                        <p><strong>Duration:</strong> 14 weeks</p>
+                        <p><strong>Instructor:</strong> Raj Patel</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2>What Our Students Say</h2>
+                <div id="testimonial-slider">
+                    <div class="testimonial-slide">
+                        <p>"Sheetal Teaches has been an invaluable resource for my child. The personalized approach and engaging lessons have significantly improved their performance in school."</p>
+                        <cite>- Parent of a Grade 8 Student</cite>
+                        <div class="rating">
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"I have greatly benefited from the Math course. The tutor's explanations are clear, and the interactive sessions make learning enjoyable."</p>
+                        <cite>- Student, Grade 10</cite>
+                        <div class="rating">
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"The English literature course has deepened my appreciation for reading and analysis. The discussions are always insightful and thought-provoking."</p>
+                        <cite>- Student, Grade 12</cite>
+                        <div class="rating">
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                            <span class="rating-star">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
+                <button id="prev-testimonial">Previous</button>
+                <button id="next-testimonial">Next</button>
             </div>
         </section>
     </main>

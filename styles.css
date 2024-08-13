@@ -515,3 +515,55 @@ footer .social-media img {
         margin: 5px 0;
     }
 }
+
+/* Calendar section */
+#calendar {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+#calendar-container {
+    text-align: center;
+}
+
+#calendar-container iframe {
+    border: 0;
+}
+
+/* Course section */
+.course-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.course-item h3 {
+    margin: 0 0 10px;
+}
+
+.course-item p {
+    margin: 0 0 10px;
+}
+
+/* Testimonials section */
+.rating {
+    margin: 10px 0;
+}
+
+.rating-star {
+    color: gold;
+    font-size: 20px;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    #nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-links li {
+        margin: 5px 0;
+    }
+}
