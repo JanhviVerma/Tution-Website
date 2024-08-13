@@ -234,3 +234,112 @@ footer {
     background-color: #0056b3;
     transition: background-color 0.3s ease;
 }
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+footer a#back-to-top {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Back to top button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Testimonial slider */
+#testimonial-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.testimonial-slide {
+    display: none;
+    text-align: center;
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+#prev-testimonial, #next-testimonial {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#prev-testimonial:hover, #next-testimonial:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+/* Team section styles */
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 10px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-member p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Course list styles */
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-item {
+    flex: 1 1 200px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.course-item h3 {
+    margin-top: 0;
+}
+
+.course-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+

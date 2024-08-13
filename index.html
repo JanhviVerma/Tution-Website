@@ -99,18 +99,22 @@
         <section id="testimonials" class="section">
             <div class="container">
                 <h2>What Our Students Say</h2>
-                <div class="testimonial">
-                    <p>"Sheetal Teaches has been an invaluable resource for my child. The personalized approach and engaging lessons have significantly improved their performance in school."</p>
-                    <cite>- Parent of a Grade 8 Student</cite>
+                <div id="testimonial-slider">
+                    <div class="testimonial-slide">
+                        <p>"Sheetal Teaches has been an invaluable resource for my child. The personalized approach and engaging lessons have significantly improved their performance in school."</p>
+                        <cite>- Parent of a Grade 8 Student</cite>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"I have greatly benefited from the Math course. The tutor's explanations are clear, and the interactive sessions make learning enjoyable."</p>
+                        <cite>- Student, Grade 10</cite>
+                    </div>
+                    <div class="testimonial-slide">
+                        <p>"The English literature course has deepened my appreciation for reading and analysis. The discussions are always insightful and thought-provoking."</p>
+                        <cite>- Student, Grade 12</cite>
+                    </div>
                 </div>
-                <div class="testimonial">
-                    <p>"I have greatly benefited from the Math course. The tutor's explanations are clear, and the interactive sessions make learning enjoyable."</p>
-                    <cite>- Student, Grade 10</cite>
-                </div>
-                <div class="testimonial">
-                    <p>"The English literature course has deepened my appreciation for reading and analysis. The discussions are always insightful and thought-provoking."</p>
-                    <cite>- Student, Grade 12</cite>
-                </div>
+                <button id="prev-testimonial">Previous</button>
+                <button id="next-testimonial">Next</button>
             </div>
         </section>
         <section id="contact" class="section">
@@ -174,17 +178,16 @@
                 <p>Subscribe to our newsletter to receive the latest news and updates from Sheetal Teaches.</p>
                 <form id="newsletter-form">
                     <label for="newsletter-email">Email:</label>
-                    <input type="email" id="newsletter-email" name="newsletter-email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Sheetal Teaches. All rights reserved.</p>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Sheetal Teaches. All rights reserved.</p>
+        <a href="#" id="back-to-top">Back to Top</a>
+    </div>
+</footer>
+<script src="script.js"></script>
