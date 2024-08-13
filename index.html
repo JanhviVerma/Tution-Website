@@ -52,47 +52,18 @@
             <div class="container">
                 <h2>Our Courses</h2>
                 <p>We offer a variety of courses across different subjects to help students succeed academically. Whether you're looking for help in Mathematics, Science, English, or any other subject, we have the right course for you.</p>
-                <div class="course-list">
-                    <div class="course-item">
-                        <h3>Mathematics</h3>
-                        <ul>
-                            <li>Algebra: Master the fundamentals and advanced topics.</li>
-                            <li>Geometry: Understand shapes, sizes, and the properties of space.</li>
-                            <li>Calculus: Learn differentiation, integration, and their applications.</li>
-                            <li>Statistics: Analyze data and make informed decisions.</li>
-                            <li>Trigonometry: Explore the relationships between angles and sides.</li>
-                        </ul>
-                    </div>
-                    <div class="course-item">
-                        <h3>Science</h3>
-                        <ul>
-                            <li>Physics: Explore the laws of nature, motion, and energy.</li>
-                            <li>Chemistry: Study the composition, structure, and properties of matter.</li>
-                            <li>Biology: Understand living organisms, their processes, and ecosystems.</li>
-                            <li>Astronomy: Learn about celestial objects and the universe.</li>
-                            <li>Environmental Science: Explore the relationship between humans and the environment.</li>
-                        </ul>
-                    </div>
-                    <div class="course-item">
-                        <h3>English</h3>
-                        <ul>
-                            <li>Grammar: Improve sentence structure, punctuation, and more.</li>
-                            <li>Literature: Analyze and appreciate classic and modern works.</li>
-                            <li>Composition: Enhance writing skills for essays, stories, and reports.</li>
-                            <li>Poetry: Explore the art of expressing ideas through verse.</li>
-                            <li>Public Speaking: Develop confidence and clarity in oral communication.</li>
-                        </ul>
-                    </div>
-                    <div class="course-item">
-                        <h3>Computer Science</h3>
-                        <ul>
-                            <li>Programming: Learn languages like Python, JavaScript, and more.</li>
-                            <li>Web Development: Create stunning websites with HTML, CSS, and JS.</li>
-                            <li>Data Science: Introduction to data analysis, visualization, and AI.</li>
-                            <li>Cybersecurity: Understand the principles of protecting information.</li>
-                            <li>Game Development: Learn how to create interactive and engaging games.</li>
-                        </ul>
-                    </div>
+                <div class="course-filter">
+                    <label for="course-category">Filter by Category:</label>
+                    <select id="course-category">
+                        <option value="all">All</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="english">English</option>
+                        <option value="cs">Computer Science</option>
+                    </select>
+                </div>
+                <div class="course-list" id="course-list">
+                    <!-- Course items will be inserted dynamically -->
                 </div>
             </div>
         </section>
@@ -178,16 +149,18 @@
                 <p>Subscribe to our newsletter to receive the latest news and updates from Sheetal Teaches.</p>
                 <form id="newsletter-form">
                     <label for="newsletter-email">Email:</label>
-                <input type="email" id="newsletter-email" name="newsletter-email" required>
-                <button type="submit">Subscribe</button>
-            </form>
+                    <input type="email" id="newsletter-email" name="newsletter-email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sheetal Teaches. All rights reserved.</p>
+            <a href="#" id="back-to-top">Back to Top</a>
         </div>
-    </section>
-</main>
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Sheetal Teaches. All rights reserved.</p>
-        <a href="#" id="back-to-top">Back to Top</a>
-    </div>
-</footer>
-<script src="script.js"></script>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

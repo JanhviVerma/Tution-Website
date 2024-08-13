@@ -115,4 +115,33 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
+    // Course filter functionality
+    document.getElementById('course-category').addEventListener('change', function () {
+        const category = this.value;
+        const courseItems = document.querySelectorAll('.course-item');
+
+        courseItems.forEach(item => {
+            if (category === 'all' || item.dataset.category === category) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+
+    // Contact form validation
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name && email && message) {
+            document.getElementById('form-message').innerText = 'Thank you for your message! We will get back to you soon.';
+            this.reset();
+        } else {
+            document.getElementById('form-message').innerText = 'Please fill out all required fields.';
+        }
+    });
+
 });
