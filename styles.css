@@ -567,3 +567,81 @@ footer .social-media img {
         margin: 5px 0;
     }
 }
+
+#faq {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.faq-item h3 {
+    margin: 0 0 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-item h3:hover {
+    color: #007bff;
+}
+
+.faq-item p {
+    margin: 0;
+    display: none;
+    transition: max-height 0.3s ease;
+}
+
+/* Resources section */
+#resources {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    margin: 10px 0;
+}
+
+.resource-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.resource-list a:hover {
+    text-decoration: underline;
+}
+
+/* Smooth transition for FAQ items */
+.faq-item.open p {
+    display: block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    #nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-links li {
+        margin: 5px 0;
+    }
+}

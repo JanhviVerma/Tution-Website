@@ -212,4 +212,14 @@ document.addEventListener('DOMContentLoaded', () => {
         slide.style.display = index === 0 ? 'block' : 'none';
     });
 
+    // FAQ toggle functionality
+    document.querySelectorAll('#faq .faq-item h3').forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentElement;
+            const content = parent.querySelector('p');
+            parent.classList.toggle('open');
+            content.style.maxHeight = parent.classList.contains('open') ? content.scrollHeight + 'px' : '0';
+        });
+    });
+
 });
