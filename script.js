@@ -144,4 +144,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Login form functionality
+    document.getElementById('login-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const email = document.getElementById('login-email').value;
+        const password = document.getElementById('login-password').value;
+
+        if (email && password) {
+            document.getElementById('login-message').innerText = 'Login successful! Welcome back.';
+            this.reset();
+        } else {
+            document.getElementById('login-message').innerText = 'Please fill out all required fields.';
+        }
+    });
+
 });
