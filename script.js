@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Sheetal Teaches website loaded.');
-
-    const navLinks = document.querySelectorAll('#nav-links a');
+    const navLinks = document.querySelectorAll('#nav-links li a');
+    const nav = document.getElementById('nav-links');
 
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            navLinks.forEach(nav => nav.classList.remove('active'));
+            navLinks.forEach(navLink => navLink.classList.remove('active'));
             link.classList.add('active');
         });
     });
@@ -47,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Additional improvements: Sticky navigation on scroll
+    // Sticky navigation on scroll
     const header = document.querySelector('header');
     const sticky = header.offsetTop;
 
@@ -58,4 +57,20 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('sticky');
         }
     };
+
+    const newsletterForm = document.getElementById('newsletter-form');
+
+    newsletterForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const newsletterEmail = document.getElementById('newsletter-email').value.trim();
+
+        if (newsletterEmail) {
+            alert('Thank you for subscribing to our newsletter!');
+        } else {
+            alert('Please enter a valid email address.');
+        }
+
+        newsletterForm.reset();
+    });
 });

@@ -81,24 +81,25 @@ main {
 
 .testimonial p {
     font-style: italic;
+    color: #555;
 }
 
 .testimonial cite {
     display: block;
-    text-align: right;
     margin-top: 10px;
-    color: #555;
+    color: #333;
+    font-weight: bold;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 form label {
+    margin-top: 10px;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 form input, form textarea, form select {
@@ -115,17 +116,17 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 form button:hover {
     background-color: #0056b3;
+    transition: background-color 0.3s ease;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+form-message {
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .team {
@@ -139,42 +140,97 @@ footer {
 }
 
 .team-member img {
+    width: 150px;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
 }
 
-#learn-more {
-    display: block;
-    margin: 20px auto;
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course-item {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.course-item h3 {
+    color: #007bff;
+}
+
+.course-item ul {
+    margin-top: 10px;
+}
+
+.faq-item h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 0 0 8px 8px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Add this to the existing styles */
+
+#newsletter {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#newsletter h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+#newsletter p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+#newsletter-form {
+    display: flex;
+    justify-content: center;
+}
+
+#newsletter-form input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#newsletter-form button {
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
+    font-size: 16px;
 }
 
-#learn-more:hover {
+#newsletter-form button:hover {
     background-color: #0056b3;
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    nav ul li {
-        margin: 10px 0;
-    }
-    
-    .team {
-        flex-direction: column;
-    }
+    transition: background-color 0.3s ease;
 }
