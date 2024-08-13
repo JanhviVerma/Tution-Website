@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, h2, p {
+body, h1, h2, p, form, input, textarea, button, select, label {
     margin: 0;
     padding: 0;
 }
@@ -90,11 +90,74 @@ main {
     color: #555;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
 footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 10px 0;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#learn-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#learn-more:hover {
+    background-color: #0056b3;
 }
 
 @media (max-width: 768px) {
@@ -109,5 +172,9 @@ footer {
     
     nav ul li {
         margin: 10px 0;
+    }
+    
+    .team {
+        flex-direction: column;
     }
 }
