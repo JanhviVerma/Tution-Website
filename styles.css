@@ -454,3 +454,64 @@ footer a#back-to-top {
 .faq-item p {
     margin: 0;
 }
+
+#blog {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+.blog-post {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.blog-post h3 {
+    margin: 0 0 10px;
+}
+
+.blog-post p {
+    margin: 0 0 10px;
+}
+
+.blog-post a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+footer .social-media {
+    margin: 10px 0;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    #nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-links li {
+        margin: 5px 0;
+    }
+}
