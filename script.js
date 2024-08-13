@@ -236,4 +236,21 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(`Welcome back, ${username}!`);
     });
 
+    // Contact form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('contact-name').value;
+        const email = document.getElementById('contact-email').value;
+        const message = document.getElementById('contact-message').value;
+        alert(`Thank you for reaching out, ${name}! We will get back to you at ${email}.`);
+    });
+
+    // Blog comment form submission
+    document.querySelector('.comment-form form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('comment-name').value;
+        const comment = document.getElementById('comment-text').value;
+        alert(`Thank you for your comment, ${name}!`);
+    });
+
 });

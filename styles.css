@@ -751,3 +751,146 @@ footer .social-media img {
         margin: 5px 0;
     }
 }
+
+#dashboard {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+#dashboard p {
+    margin: 0 0 20px;
+}
+
+.dashboard-content {
+    margin-bottom: 20px;
+}
+
+.dashboard-content h3 {
+    margin: 0 0 10px;
+}
+
+.dashboard-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-content ul li {
+    margin: 5px 0;
+}
+
+.dashboard-content ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.dashboard-content ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Blog categories */
+.blog-categories {
+    margin-bottom: 20px;
+}
+
+.blog-categories a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.blog-categories a:hover {
+    background-color: #0056b3;
+}
+
+/* Comments section */
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comment-form {
+    margin-top: 20px;
+}
+
+.comment-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-form label {
+    margin-bottom: 5px;
+}
+
+.comment-form input, .comment-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.comment-form button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact form */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    #nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav-links li {
+        margin: 5px 0;
+    }
+}
