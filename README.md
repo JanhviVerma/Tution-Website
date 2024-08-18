@@ -4,6 +4,8 @@
 
 The **Tuition Website** is a comprehensive web platform designed to connect students with their tutor. This website provides an easy-to-navigate interface where students can find detailed information about the courses offered, class schedules, and more. The site also features a contact section for inquiries and registration.
 
+**[Visit the Website Live!](https://janhviverma.github.io/Tution-Website/)**
+
 ## Features
 
 - **Course Listings:** Detailed information about available courses, including descriptions, schedules, and fees.
@@ -53,3 +55,5 @@ The **Tuition Website** is a comprehensive web platform designed to connect stud
 
 3. **Responsive Experience:**
    - The website is fully responsive, providing a seamless experience on any device, whether it's a smartphone, tablet, or desktop.
+
+## License
